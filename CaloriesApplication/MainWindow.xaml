@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <StackPanel Orientation="Horizontal" Height="35" VerticalAlignment="Top">
+            <Button x:Name="AddProduct" Content="Add Product" MinWidth="100" Click="AddProduct_Click"></Button>
+            <Button x:Name="SearchProduct" Content="Search Product" MinWidth="100" Click="SearchProduct_Click"></Button>
+            <Button x:Name="AddDish" Content="Add Dish" MinWidth="100" Click="AddDish_Click"></Button>
+            <Button x:Name="SearchDish" Content="Search Dish" MinWidth="100" Click="SearchDish_Click"></Button>
+            <Button x:Name="NeededCalories" Content="Needed Calories" MinWidth="100" Click="NeededCalories_Click"></Button>
+        </StackPanel>
+        <Frame x:Name="masterFrame" Margin="0,35,0,0" Background="Aqua" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

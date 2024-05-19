@@ -20,6 +20,30 @@ namespace CaloriesApplication
         {
             InitializeComponent();
         }
+        private void AddProduct_Click(object sender, RoutedEventArgs e)
+        {
+            masterFrame.Content = new AddProductPage();
+        }
+
+        private void SearchProduct_Click(object sender, RoutedEventArgs e)
+        {
+            masterFrame.Content = new SearchProductPage();
+        }
+
+        private void AddDish_Click(object sender, RoutedEventArgs e)
+        {
+            masterFrame.Content = new AddDishPage();
+        }
+
+        private void SearchDish_Click(object sender, RoutedEventArgs e)
+        {
+            masterFrame.Content = new SearchDishPage();
+        }
+
+        private void NeededCalories_Click(object sender, RoutedEventArgs e)
+        {
+            masterFrame.Content = new NeededCaloriesPage();
+        }
     }
     // test branch
 }
