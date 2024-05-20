@@ -23,16 +23,18 @@ namespace CaloriesApplication
         public AddProductPage()
         {
             InitializeComponent();
-            lvProducts.Items.Add("a");
-            lvProducts.Items.Add("b");
-            lvProducts.Items.Add("c");
-            lvProducts.Items.Add("d");
+            lvProducts.Items.Add("aim");
+            lvProducts.Items.Add("bot");
+            lvProducts.Items.Add("csgo");
+            lvProducts.Items.Add("dota");
         }
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
             lvProducts.Items.Add(txtEntry.Text);
         }
+
+
 
     }
 }
