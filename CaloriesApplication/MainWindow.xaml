@@ -1,19 +1,17 @@
 ﻿<Window x:Class="CaloriesApplication.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:CaloriesApplication"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Calories Application" Height="450" Width="800">
     <Grid>
-        <StackPanel Orientation="Horizontal" Height="35" VerticalAlignment="Top">
-            <Button x:Name="AddProduct" Content="Add Product" MinWidth="100" Click="AddProduct_Click"></Button>
-            <Button x:Name="SearchProduct" Content="Search Product" MinWidth="100" Click="SearchProduct_Click"></Button>
-            <Button x:Name="AddDish" Content="Add Dish" MinWidth="100" Click="AddDish_Click"></Button>
-            <Button x:Name="SearchDish" Content="Search Dish" MinWidth="100" Click="SearchDish_Click"></Button>
-            <Button x:Name="NeededCalories" Content="Needed Calories" MinWidth="100" Click="NeededCalories_Click"></Button>
-        </StackPanel>
-        <Frame x:Name="masterFrame" Margin="0,35,0,0" Background="Aqua" NavigationUIVisibility="Hidden"/>
+        <DockPanel>
+            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+                <Button Content="Add Product" Click="AddProduct_Click" Margin="5"/>
+                <Button Content="Search Product" Click="SearchProduct_Click" Margin="5"/>
+                <Button Content="Add Dish" Click="AddDish_Click" Margin="5"/>
+                <Button Content="Search Dish" Click="SearchDish_Click" Margin="5"/>
+                <Button Content="Needed Calories" Click="NeededCalories_Click" Margin="5"/>
+            </StackPanel>
+            <Frame Name="masterFrame" NavigationUIVisibility="Hidden"/>
+        </DockPanel>
     </Grid>
 </Window>
