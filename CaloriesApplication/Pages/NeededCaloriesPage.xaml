@@ -44,9 +44,9 @@
             <userControls:TextBox Grid.Column="1" Grid.Row="1" Height="30" Width="300" Placeholder="Enter kiloCalories"/>
             <userControls:TextBox Grid.Column="1" Grid.Row="2" Height="30" Width="300" Placeholder="Enter description"/>
             <!--Максік додасть тут випадаючі списки чи налаштує їх-->
-            <ComboBox Grid.Row="3" Grid.Column="1" x:Name="sexCombo" Height="35" Width="300"/>
+            <ComboBox Grid.Row="3" Grid.Column="1" x:Name="sexCombo" Height="30" Width="300"/>
                 <!--ItemsSource="{x:Bind sexCombinator}" DisplayMemberPath="Source" -->
-            <ComboBox Grid.Row="4" Grid.Column="2" x:Name="loadCombo" Height="35" Width="300"/>
+            <ComboBox Grid.Row="4" Grid.Column="2" x:Name="loadCombo" Height="30" Width="300"/>
                 <!--ItemsSource="{x:Bind loadCombinator}" DisplayMemberPath="Source" -->
                 
         </Grid>
