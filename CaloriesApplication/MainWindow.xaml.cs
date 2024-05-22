@@ -1,6 +1,9 @@
-﻿using System.Windows;
-using CaloriesApplication.Data;
-using System.Linq;
+// ﻿using System.Windows;
+// <<<<<<< dish_food_calorie
+// using CaloriesApplication.Data;
+// using System.Linq;
+// =======
+// >>>>>>> get_calories_product
 
 namespace CaloriesApplication
 {
