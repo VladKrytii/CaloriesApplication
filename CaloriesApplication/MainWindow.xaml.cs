@@ -5,6 +5,9 @@
 // =======
 // >>>>>>> get_calories_product
 
+using CaloriesApplication.Data;
+using System.Windows;
+
 namespace CaloriesApplication
 {
     public partial class MainWindow : Window
