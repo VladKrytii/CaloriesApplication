@@ -3,8 +3,7 @@
     public double CalculateCalories(double height, double weight, double age, string gender, string exercise)
     {
         double bmr = 0;
-        double calories = 0;
-        int bmrmult = 1;
+        double bmrmult = 1;
 
         // Perform gender-specific BMR calculation
         if (gender == "Male")
@@ -20,21 +19,21 @@
         switch (exercise)
         {
             case "Light exercise (1–3 days per week)":
-                bmrmult = (int)1.375m;
+                bmrmult = 1.375;
                 break;
             case "Moderate exercise (3–5 days per week)":
-                bmrmult = (int)1.55m;
+                bmrmult = 1.55;
                 break;
             case "Heavy exercise (6–7 days per week)":
-                bmrmult = (int)1.725m;
+                bmrmult = 1.725;
                 break;
             case "Very heavy exercise (twice per day, extra heavy workouts)":
-                bmrmult = (int)1.9m;
+                bmrmult = 1.9;
                 break;
         }
 
         // Calculate total calories
-        calories = bmr * bmrmult;
+        double calories = bmr * bmrmult;
         return calories;
     }
 }
