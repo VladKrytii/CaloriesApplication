@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace CaloriesApplication.Data
+namespace CaloriesApplication.Database
 {
     public class FoodDbContext : DbContext
     {
