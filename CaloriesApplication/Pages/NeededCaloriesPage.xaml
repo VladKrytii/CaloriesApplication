@@ -36,30 +36,33 @@
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
             <Label Grid.Row="0" Content="Age" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
-            <Label Grid.Row="1" Content="Width" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+            <Label Grid.Row="1" Content="Weigth" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
             <Label Grid.Row="2" Content="Height" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
             <Label Grid.Row="3" Content="Sex" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
             <Label Grid.Row="4" Content="Physical Load" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
-            <userControls:TextBox Grid.Column="1" Grid.Row="0" Height="30" Width="300" Placeholder="Enter product name"/>
-            <userControls:TextBox Grid.Column="1" Grid.Row="1" Height="30" Width="300" Placeholder="Enter kiloCalories"/>
-            <userControls:TextBox Grid.Column="1" Grid.Row="2" Height="30" Width="300" Placeholder="Enter description"/>
-            <!--Максік додасть тут випадаючі списки чи налаштує їх-->
-            <ComboBox Grid.Row="3" Grid.Column="1" x:Name="sexCombo" Height="30" Width="300"/>
-                <!--ItemsSource="{x:Bind sexCombinator}" DisplayMemberPath="Source" -->
-            <ComboBox Grid.Row="4" Grid.Column="2" x:Name="loadCombo" Height="30" Width="300"/>
-                <!--ItemsSource="{x:Bind loadCombinator}" DisplayMemberPath="Source" -->
-                
+            <TextBox Name ="ageTextBox" Grid.Column="1" Grid.Row="0" Height="30" Width="300"/>
+            <TextBox Name ="weightTextBox" Grid.Column="1" Grid.Row="1" Height="30" Width="300"/>
+            <TextBox Name ="heightTextBox" Grid.Column="1" Grid.Row="2" Height="30" Width="300"/>
+            <ComboBox Grid.Row="3" Grid.Column="1" x:Name="genderCombo" Height="30" Width="300">
+                <ComboBoxItem Content="Male" />
+                <ComboBoxItem Content="Female" />
+            </ComboBox>
+
+            <ComboBox Grid.Row="4" Grid.Column="1" x:Name="loadCombo" Height="30" Width="300">
+                <ComboBoxItem Content="Light exercise (1–3 days per week)" />
+                <ComboBoxItem Content="Moderate exercise (3–5 days per week)" />
+                <ComboBoxItem Content="Heavy exercise (6–7 days per week)" />
+                <ComboBoxItem Content="Very heavy exercise (twice per day, extra heavy workouts)" />
+            </ComboBox>
+
         </Grid>
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="200"/>
-                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="3*"/>
             </Grid.ColumnDefinitions>
             <Button x:Name="calcBtn" Grid.Column="0" Content="Сalculate" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Click="calcBtn_Click"></Button>
-            <!--#region -->
-                <!--Обсудити детально-->
-            <!--#endregion-->
+            <TextBlock x:Name="bmrDisplay" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Foreground="Black"/>
         </Grid>
     </Grid>
 </Page>

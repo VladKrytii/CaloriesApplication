@@ -5,7 +5,7 @@
 // =======
 // >>>>>>> get_calories_product
 
-using CaloriesApplication.Data;
+using CaloriesApplication.Database;
 using System.Windows;
 
 namespace CaloriesApplication
