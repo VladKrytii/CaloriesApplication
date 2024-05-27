@@ -6,6 +6,7 @@ namespace CaloriesApplication.Data
     {
         public DbSet<Product>? Products { get; set; }
         public DbSet<Dish>? Dishes { get; set; }
+        public object Product { get; internal set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

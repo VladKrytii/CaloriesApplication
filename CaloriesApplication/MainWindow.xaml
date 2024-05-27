@@ -5,8 +5,8 @@
     <Grid>
         <DockPanel>
             <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
-                <Button Content="Add Product" Click="AddProduct_Click" Margin="5"/>
                 <Button Content="Add Dish" Click="AddDish_Click" Margin="5"/>
+                <Button Content="Add Product" Click="AddProduct_Click" Margin="5"/>
                 <Button Content="Search Product" Click="SearchProduct_Click" Margin="5"/>
                 <Button Content="Search Dish" Click="SearchDish_Click" Margin="5"/>
                 <Button Content="Needed Calories" Click="NeededCalories_Click" Margin="5"/>
