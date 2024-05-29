@@ -34,5 +34,10 @@ namespace CaloriesApplication
 
             MessageBox.Show("Added!", "Confirm", MessageBoxButton.OK, MessageBoxImage.Information);
         }
+
+        private void NameTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

@@ -61,7 +61,7 @@
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="3*"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="calcBtn" Grid.Column="0" Content="Сalculate" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Click="calcBtn_Click"></Button>
+            <Button x:Name="calcBtn" Grid.Column="0" Padding="10 5 10 5" Content="Сalculate" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Click="calcBtn_Click"></Button>
             <TextBlock x:Name="bmrDisplay" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Foreground="Black"/>
         </Grid>
     </Grid>

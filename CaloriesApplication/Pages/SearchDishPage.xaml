@@ -36,8 +36,8 @@
             <Label Grid.Row="1" Content="KiloCaloriesPer100Grams" Height="40" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
 
             <Grid Grid.Column="1" Grid.Row="0" Height="40" Width="300" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <TextBox x:Name="DishNameTextBox" VerticalAlignment="Center" HorizontalAlignment="Center" TextChanged="DishNameTextBox_TextChanged" Width="290"/>
-                <TextBlock Text="Enter dish name" IsHitTestVisible="False" Foreground="Gray" Margin="5,0" VerticalAlignment="Center">
+                <TextBox x:Name="DishNameTextBox" Height="30" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextChanged="DishNameTextBox_TextChanged" Width="290"/>
+                <TextBlock Text="Enter dish name"  IsHitTestVisible="False" Foreground="Gray" Margin="5,0" VerticalAlignment="Center">
                     <TextBlock.Style>
                         <Style TargetType="TextBlock">
                             <Setter Property="Visibility" Value="Collapsed"/>
@@ -51,7 +51,7 @@
                 </TextBlock>
             </Grid>
             <Grid Grid.Column="1" Grid.Row="1" Height="40" Width="300" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <TextBox x:Name="KiloCaloriesTextBox" VerticalAlignment="Center" HorizontalAlignment="Center" TextChanged="KiloCaloriesTextBox_TextChanged" Width="290"/>
+                <TextBox x:Name="KiloCaloriesTextBox" Height="30" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextChanged="KiloCaloriesTextBox_TextChanged" Width="290"/>
                 <TextBlock Text="Enter dish kiloCalories" IsHitTestVisible="False" Foreground="Gray" Margin="5,0" VerticalAlignment="Center">
                     <TextBlock.Style>
                         <Style TargetType="TextBlock">
@@ -72,7 +72,7 @@
                 <ColumnDefinition Width="200"/>
                 <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="SearchButton" Grid.Column="1" Content="Search" Padding="50,0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Click="SearchButton_Click"></Button>
+            <Button x:Name="SearchButton" Grid.Column="1" Content="Search"  Padding="50,0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Click="SearchButton_Click"></Button>
         </Grid>
         <Grid Grid.Row="3">
             <ListView x:Name="SearchResultsListView" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
