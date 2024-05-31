@@ -1,12 +1,26 @@
 ﻿<Window x:Class="CaloriesApplication.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:CaloriesApplication"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Calories Application" Height="650" Width="900">
     <Grid>
-
+        <DockPanel>
+            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+                <Grid Width="878">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Content="Add Dish" Click="AddDish_Click" Margin="5" Grid.Column="0"/>
+                    <Button Content="Add Product" Click="AddProduct_Click" Margin="5" Grid.Column="1"/>
+                    <Button Content="Search Dish" Click="SearchDish_Click" Margin="5" Grid.Column="2"/>
+                    <Button Content="Search Product" Click="SearchProduct_Click" Margin="5" Grid.Column="3"/>
+                    <Button Content="Needed Calories" Click="NeededCalories_Click" Margin="5" Grid.Column="4"/>
+                </Grid>
+            </StackPanel>
+            <Frame Name="masterFrame" NavigationUIVisibility="Hidden"/>
+        </DockPanel>
     </Grid>
 </Window>

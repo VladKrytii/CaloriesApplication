@@ -1,0 +1,68 @@
+﻿<Page x:Class="CaloriesApplication.NeededCaloriesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CaloriesApplication"
+      xmlns:userControls="clr-namespace:CaloriesApplication.Pages.View.UserControls"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="NeededCaloriesPage">
+
+    <Grid Background="Azure" Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="1" Content="Needed Calories" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25"></Label>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Content="Age" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+            <Label Grid.Row="1" Content="Weigth" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+            <Label Grid.Row="2" Content="Height" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+            <Label Grid.Row="3" Content="Sex" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+            <Label Grid.Row="4" Content="Physical Load" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+            <TextBox Name ="ageTextBox" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="0" Height="30" Width="300"/>
+            <TextBox Name ="weightTextBox" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1" Height="30" Width="300"/>
+            <TextBox Name ="heightTextBox" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="2" Height="30" Width="300"/>
+            <ComboBox VerticalContentAlignment="Center" Grid.Row="3" Grid.Column="1" x:Name="genderCombo" Height="30" Width="300">
+                <ComboBoxItem Content="Male" />
+                <ComboBoxItem Content="Female" />
+            </ComboBox>
+
+            <ComboBox VerticalContentAlignment="Center" Grid.Row="4" Grid.Column="1" x:Name="loadCombo" Height="30" Width="300">
+                <ComboBoxItem Content="Light exercise (1–3 days per week)" />
+                <ComboBoxItem Content="Moderate exercise (3–5 days per week)" />
+                <ComboBoxItem Content="Heavy exercise (6–7 days per week)" />
+                <ComboBoxItem Content="Very heavy exercise (twice per day, extra heavy workouts)" />
+            </ComboBox>
+
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="calcBtn" Grid.Column="0" Padding="10 5 10 5" Content="Сalculate" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Click="calcBtn_Click"></Button>
+            <TextBlock x:Name="bmrDisplay" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Foreground="Black"/>
+        </Grid>
+    </Grid>
+</Page>
